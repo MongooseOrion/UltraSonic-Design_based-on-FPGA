@@ -9,6 +9,7 @@
   * 波形发生程序块
   * 高速计数程序块
 * 显示模块
+![图片alt](https://raw.githubusercontent.com/MongooseOrion/UltraSonic-Design_based-on-FPGA/main/v1.1/Picture/%E7%BB%98%E5%9B%BE4.png?token=GHSAT0AAAAAABXMLR4BSZS3YQUEFYMNTUKOYXTRPYA "程序设计基本框架")
 ## 时钟
 本系统使用 ***50MHz*** 时钟作为系统主时钟，使用 ***17kHz*** 信号作为计数脉冲进行测距。其中，*50MHz* 时钟需使用 *Vivado* IP库中的时钟模块才能将板载晶振的频率配置为需要的频率。<br>
 ## 测量模块
