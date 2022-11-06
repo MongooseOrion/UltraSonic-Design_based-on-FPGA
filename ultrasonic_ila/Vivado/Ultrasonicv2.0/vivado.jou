@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jun 22 13:04:06 2022
+# Process ID: 4924
+# Current directory: C:/Users/smn90/Desktop/毕设/v1.1/Vivado/Ultrasonicv2.0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14888 C:\Users\smn90\Desktop\毕设\v1.1\Vivado\Ultrasonicv2.0\Ultrasonicv2.0.xpr
+# Log file: C:/Users/smn90/Desktop/毕设/v1.1/Vivado/Ultrasonicv2.0/vivado.log
+# Journal file: C:/Users/smn90/Desktop/毕设/v1.1/Vivado/Ultrasonicv2.0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/smn90/Desktop/毕设/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices arm_dap_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices arm_dap_1] 0]
+current_hw_device [get_hw_devices Unknown_Device_0]

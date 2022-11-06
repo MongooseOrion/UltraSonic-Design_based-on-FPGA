@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May 11 18:31:17 2022
+# Process ID: 13456
+# Current directory: C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13860 C:\Users\smn90\Desktop\v1.1\Vivado\Ultrasonicv2.0\Ultrasonicv2.0.xpr
+# Log file: C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/vivado.log
+# Journal file: C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.runs/impl_1/top_ultrasonic.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.runs/impl_1/top_ultrasonic.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.runs/impl_1/top_ultrasonic.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.runs/impl_1/top_ultrasonic.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.runs/impl_1/top_ultrasonic.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.runs/impl_1/top_ultrasonic.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]]
+set_property TRIGGER_COMPARE_VALUE eq12'u0 [get_hw_probes cnt_17k_w -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]]
+set_property TRIGGER_COMPARE_VALUE eq12'u2942 [get_hw_probes cnt_17k_w -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]]
+save_wave_config {C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}

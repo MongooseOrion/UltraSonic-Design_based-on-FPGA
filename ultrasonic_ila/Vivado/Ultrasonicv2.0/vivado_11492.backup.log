@@ -1,0 +1,591 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May  5 21:49:25 2022
+# Process ID: 11492
+# Current directory: C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14232 C:\Users\smn90\Desktop\v1.1\Vivado\Ultrasonicv2.0\Ultrasonicv2.0.xpr
+# Log file: C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/vivado.log
+# Journal file: C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0\vivado.jou
+#-----------------------------------------------------------
+start_guopopen_project C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/smn90/Desktop/Ultrasonic/v1.1/Vivado/Ultrasonicv2.0' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'opopen_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:09 . Memory (MB): peak = 778.012 ; gain = 141.7updexit
+INFO: [Common 17-206] Exiting ViWARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {5}] [get_ips ila_0]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+generate_target all [get_files  C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+reset_run ila_0_synth_1
+launch_runs -jobs 12 ila_0_synth_1
+[Thu May  5 22:03:19 2022] Launched ila_0_synth_1...
+Run output will be captured here: C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.runs/ila_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/ila_0/ila_0.xci] -directory C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.ip_user_files -ipstatic_source_dir C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.cache/compile_simlib/modelsim} {questa=C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.cache/compile_simlib/questa} {riviera=C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.cache/compile_simlib/riviera} {activehdl=C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-3
+Top: top_ultrasonic
+INFO: [Device 21-403] Loading part xc7z020clg400-3
+WARNING: [Synth 8-2292] literal value truncated to fit in 18 bits [C:/Users/smn90/Desktop/v1.1/RTL/display.v:14]
+WARNING: [Synth 8-2611] redeclaration of ansi port cnt_17k_en_w is not allowed [C:/Users/smn90/Desktop/v1.1/RTL/measurement.v:61]
+WARNING: [Synth 8-2611] redeclaration of ansi port clk_17k is not allowed [C:/Users/smn90/Desktop/v1.1/RTL/measurement.v:83]
+WARNING: [Synth 8-2611] redeclaration of ansi port cnt_17k_w is not allowed [C:/Users/smn90/Desktop/v1.1/RTL/measurement.v:95]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 4140.992 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_ultrasonic' [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:1]
+INFO: [Synth 8-6157] synthesizing module 'measurement' [C:/Users/smn90/Desktop/v1.1/RTL/measurement.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'measurement' (1#1) [C:/Users/smn90/Desktop/v1.1/RTL/measurement.v:1]
+WARNING: [Synth 8-7023] instance 'measurement_sys1' of module 'measurement' has 8 connections declared, but only 5 given [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:15]
+INFO: [Synth 8-6157] synthesizing module 'display' [C:/Users/smn90/Desktop/v1.1/RTL/display.v:1]
+	Parameter AB bound to: 18'b001001001111100000 
+INFO: [Synth 8-6155] done synthesizing module 'display' (2#1) [C:/Users/smn90/Desktop/v1.1/RTL/display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/.Xil/Vivado-8656-Mongoose_Razer/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (3#1) [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/.Xil/Vivado-8656-Mongoose_Razer/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-7023] instance 'clock' of module 'clk_wiz_0' has 4 connections declared, but only 2 given [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:35]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:43]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/.Xil/Vivado-8656-Mongoose_Razer/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (4#1) [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/.Xil/Vivado-8656-Mongoose_Razer/realtime/ila_0_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'probe1' does not match port width (1) of module 'ila_0' [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:46]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'measurement_sys1'. This will prevent further optimization [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:15]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'measurement'. This will prevent further optimization [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:43]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'display_sys1'. This will prevent further optimization [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_ultrasonic' (5#1) [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 4140.992 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 4140.992 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 4140.992 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clock'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/ila_0/ila_0.dcp' for cell 'measurement'
+INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clock/inst'
+Finished Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clock/inst'
+Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clock/inst'
+Finished Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clock/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_ultrasonic_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_ultrasonic_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'measurement/inst'
+Finished Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'measurement/inst'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/constrs_1/new/v1.0.xdc]
+Finished Parsing XDC File [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/constrs_1/new/v1.0.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 4316.402 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 48 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 48 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:14 . Memory (MB): peak = 4316.402 ; gain = 175.410
+24 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:22 . Memory (MB): peak = 4316.402 ; gain = 426.707
+refresh_design
+WARNING: [Synth 8-2292] literal value truncated to fit in 18 bits [C:/Users/smn90/Desktop/v1.1/RTL/display.v:14]
+WARNING: [Synth 8-2611] redeclaration of ansi port cnt_17k_en_w is not allowed [C:/Users/smn90/Desktop/v1.1/RTL/measurement.v:61]
+WARNING: [Synth 8-2611] redeclaration of ansi port clk_17k is not allowed [C:/Users/smn90/Desktop/v1.1/RTL/measurement.v:83]
+WARNING: [Synth 8-2611] redeclaration of ansi port cnt_17k_w is not allowed [C:/Users/smn90/Desktop/v1.1/RTL/measurement.v:95]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 4316.402 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_ultrasonic' [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:1]
+INFO: [Synth 8-6157] synthesizing module 'measurement' [C:/Users/smn90/Desktop/v1.1/RTL/measurement.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'measurement' (1#1) [C:/Users/smn90/Desktop/v1.1/RTL/measurement.v:1]
+WARNING: [Synth 8-7023] instance 'measurement_sys1' of module 'measurement' has 8 connections declared, but only 5 given [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:19]
+INFO: [Synth 8-6157] synthesizing module 'display' [C:/Users/smn90/Desktop/v1.1/RTL/display.v:1]
+	Parameter AB bound to: 18'b001001001111100000 
+INFO: [Synth 8-6155] done synthesizing module 'display' (2#1) [C:/Users/smn90/Desktop/v1.1/RTL/display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/.Xil/Vivado-8656-Mongoose_Razer/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (3#1) [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/.Xil/Vivado-8656-Mongoose_Razer/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-7023] instance 'clock' of module 'clk_wiz_0' has 4 connections declared, but only 2 given [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:39]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:44]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/.Xil/Vivado-8656-Mongoose_Razer/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (4#1) [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/.Xil/Vivado-8656-Mongoose_Razer/realtime/ila_0_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'probe1' does not match port width (1) of module 'ila_0' [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:47]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'measurement_sys1'. This will prevent further optimization [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:19]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'measurement'. This will prevent further optimization [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:44]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'display_sys1'. This will prevent further optimization [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'top_ultrasonic' (5#1) [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 4316.402 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 4316.402 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 4316.402 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clock'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/ila_0/ila_0.dcp' for cell 'measurement'
+INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clock/inst'
+Finished Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clock/inst'
+Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clock/inst'
+Finished Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clock/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_ultrasonic_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_ultrasonic_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'measurement/inst'
+Finished Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'measurement/inst'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/constrs_1/new/v1.0.xdc]
+Finished Parsing XDC File [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/constrs_1/new/v1.0.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 4316.402 ; gain = 0.000
+refresh_design
+WARNING: [Synth 8-2292] literal value truncated to fit in 18 bits [C:/Users/smn90/Desktop/v1.1/RTL/display.v:14]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 4316.402 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_ultrasonic' [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:1]
+INFO: [Synth 8-6157] synthesizing module 'measurement' [C:/Users/smn90/Desktop/v1.1/RTL/measurement.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'measurement' (1#1) [C:/Users/smn90/Desktop/v1.1/RTL/measurement.v:1]
+WARNING: [Synth 8-7023] instance 'measurement_sys1' of module 'measurement' has 8 connections declared, but only 5 given [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:19]
+INFO: [Synth 8-6157] synthesizing module 'display' [C:/Users/smn90/Desktop/v1.1/RTL/display.v:1]
+	Parameter AB bound to: 18'b001001001111100000 
+INFO: [Synth 8-6155] done synthesizing module 'display' (2#1) [C:/Users/smn90/Desktop/v1.1/RTL/display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/.Xil/Vivado-8656-Mongoose_Razer/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (3#1) [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/.Xil/Vivado-8656-Mongoose_Razer/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-7023] instance 'clock' of module 'clk_wiz_0' has 4 connections declared, but only 2 given [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:39]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:44]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/.Xil/Vivado-8656-Mongoose_Razer/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (4#1) [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/.Xil/Vivado-8656-Mongoose_Razer/realtime/ila_0_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'probe1' does not match port width (1) of module 'ila_0' [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:47]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'measurement_sys1'. This will prevent further optimization [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:19]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'measurement'. This will prevent further optimization [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:44]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'display_sys1'. This will prevent further optimization [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'top_ultrasonic' (5#1) [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 4316.402 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 4316.402 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 4316.402 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clock'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/ila_0/ila_0.dcp' for cell 'measurement'
+INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clock/inst'
+Finished Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clock/inst'
+Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clock/inst'
+Finished Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clock/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_ultrasonic_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_ultrasonic_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'measurement/inst'
+Finished Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'measurement/inst'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/constrs_1/new/v1.0.xdc]
+Finished Parsing XDC File [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/constrs_1/new/v1.0.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 4316.402 ; gain = 0.000
+refresh_design
+WARNING: [Synth 8-2292] literal value truncated to fit in 18 bits [C:/Users/smn90/Desktop/v1.1/RTL/display.v:14]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 4316.402 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_ultrasonic' [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:1]
+INFO: [Synth 8-6157] synthesizing module 'measurement' [C:/Users/smn90/Desktop/v1.1/RTL/measurement.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'measurement' (1#1) [C:/Users/smn90/Desktop/v1.1/RTL/measurement.v:1]
+WARNING: [Synth 8-7023] instance 'measurement_sys1' of module 'measurement' has 8 connections declared, but only 5 given [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:19]
+INFO: [Synth 8-6157] synthesizing module 'display' [C:/Users/smn90/Desktop/v1.1/RTL/display.v:1]
+	Parameter AB bound to: 18'b001001001111100000 
+INFO: [Synth 8-6155] done synthesizing module 'display' (2#1) [C:/Users/smn90/Desktop/v1.1/RTL/display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/.Xil/Vivado-8656-Mongoose_Razer/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (3#1) [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/.Xil/Vivado-8656-Mongoose_Razer/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-7023] instance 'clock' of module 'clk_wiz_0' has 4 connections declared, but only 2 given [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:39]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:44]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/.Xil/Vivado-8656-Mongoose_Razer/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (4#1) [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/.Xil/Vivado-8656-Mongoose_Razer/realtime/ila_0_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'probe1' does not match port width (1) of module 'ila_0' [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:47]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'measurement_sys1'. This will prevent further optimization [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:19]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'measurement'. This will prevent further optimization [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:44]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'display_sys1'. This will prevent further optimization [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'top_ultrasonic' (5#1) [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 4316.402 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 4316.402 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 4316.402 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clock'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/ila_0/ila_0.dcp' for cell 'measurement'
+INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clock/inst'
+Finished Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clock/inst'
+Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clock/inst'
+Finished Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clock/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_ultrasonic_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_ultrasonic_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'measurement/inst'
+Finished Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'measurement/inst'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/constrs_1/new/v1.0.xdc]
+Finished Parsing XDC File [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/constrs_1/new/v1.0.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 4316.402 ; gain = 0.000
+refresh_design
+WARNING: [Synth 8-2292] literal value truncated to fit in 18 bits [C:/Users/smn90/Desktop/v1.1/RTL/display.v:14]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 4316.402 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_ultrasonic' [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:1]
+INFO: [Synth 8-6157] synthesizing module 'measurement' [C:/Users/smn90/Desktop/v1.1/RTL/measurement.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'measurement' (1#1) [C:/Users/smn90/Desktop/v1.1/RTL/measurement.v:1]
+WARNING: [Synth 8-689] width (1) of port connection 'cnt_17k_w' does not match port width (12) of module 'measurement' [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:26]
+INFO: [Synth 8-6157] synthesizing module 'display' [C:/Users/smn90/Desktop/v1.1/RTL/display.v:1]
+	Parameter AB bound to: 18'b001001001111100000 
+INFO: [Synth 8-6155] done synthesizing module 'display' (2#1) [C:/Users/smn90/Desktop/v1.1/RTL/display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/.Xil/Vivado-8656-Mongoose_Razer/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (3#1) [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/.Xil/Vivado-8656-Mongoose_Razer/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-7023] instance 'clock' of module 'clk_wiz_0' has 4 connections declared, but only 2 given [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:42]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:47]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/.Xil/Vivado-8656-Mongoose_Razer/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (4#1) [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/.Xil/Vivado-8656-Mongoose_Razer/realtime/ila_0_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'probe1' does not match port width (1) of module 'ila_0' [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:50]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'measurement_sys1'. This will prevent further optimization [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:19]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'measurement'. This will prevent further optimization [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:47]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'display_sys1'. This will prevent further optimization [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'top_ultrasonic' (5#1) [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 4316.402 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 4316.402 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 4316.402 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clock'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/ila_0/ila_0.dcp' for cell 'measurement'
+INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clock/inst'
+Finished Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clock/inst'
+Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clock/inst'
+Finished Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clock/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_ultrasonic_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_ultrasonic_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'measurement/inst'
+Finished Parsing XDC File [c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'measurement/inst'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/constrs_1/new/v1.0.xdc]
+Finished Parsing XDC File [C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/constrs_1/new/v1.0.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 4316.402 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Thu May  5 22:28:09 2022] Launched synth_1...
+Run output will be captured here: C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.runs/synth_1/runme.log
+[Thu May  5 22:28:09 2022] Launched impl_1...
+Run output will be captured here: C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203367162A
+open_hw_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 4316.402 ; gain = 0.000
+set_property PROGRAM.FILE {C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.runs/impl_1/top_ultrasonic.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.runs/impl_1/top_ultrasonic.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.runs/impl_1/top_ultrasonic.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'measurement' at location 'uuid_1E719E53F899574E89E53E2D7E3971CA' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.runs/impl_1/top_ultrasonic.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.runs/impl_1/top_ultrasonic.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.runs/impl_1/top_ultrasonic.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-05 22:32:06
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-05 22:32:06
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-05 22:32:09
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-05 22:32:09
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-05 22:32:36
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-05 22:32:36
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-05 22:33:57
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-05 22:33:57
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-05 22:34:28
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-05 22:34:28
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-05 22:34:33
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-05 22:34:33
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-05 22:34:43
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-05 22:34:43
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-05 22:34:47
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-05 22:34:47
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-05 22:34:50
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-05 22:34:50
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-05 22:34:54
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-05 22:34:54
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-05 22:34:57
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-05 22:34:57
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-05 22:35:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-05 22:35:00
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-05 22:35:13
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-05 22:35:13
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-05 22:36:14
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-05 22:36:14
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-05 22:36:28
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-05 22:36:28
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+save_wave_config {C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203367162A
+set_property PROGRAM.FILE {C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.runs/impl_1/top_ultrasonic.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.runs/impl_1/top_ultrasonic.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.runs/impl_1/top_ultrasonic.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]]
+set_property -name {xsim.simulate.runtime} -value {50ms} -objects [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/smn90/Desktop/v1.1/RTL/top_wave.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/smn90/Desktop/v1.1/RTL/measurement.v:]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-05 22:49:25
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-05 22:49:25
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-05 22:50:42
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-05 22:50:42
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-05 22:51:08
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"measurement"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-05 22:51:08
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_DATA_DEPTH {131072}] [get_ips ila_0]
+generate_target all [get_files  C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+reset_run ila_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.runs/ila_0_synth_1
+
+launch_runs -jobs 12 ila_0_synth_1
+[Thu May  5 22:51:42 2022] Launched ila_0_synth_1...
+Run output will be captured here: C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.runs/ila_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.srcs/sources_1/ip/ila_0/ila_0.xci] -directory C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.ip_user_files -ipstatic_source_dir C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.cache/compile_simlib/modelsim} {questa=C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.cache/compile_simlib/questa} {riviera=C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.cache/compile_simlib/riviera} {activehdl=C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Thu May  5 22:52:19 2022] Launched ila_0_synth_1, synth_1...
+Run output will be captured here:
+ila_0_synth_1: C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.runs/ila_0_synth_1/runme.log
+synth_1: C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.runs/synth_1/runme.log
+[Thu May  5 22:52:19 2022] Launched impl_1...
+Run output will be captured here: C:/Users/smn90/Desktop/v1.1/Vivado/Ultrasonicv2.0/Ultrasonicv2.0.runs/impl_1/runme.log
