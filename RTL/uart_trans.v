@@ -1,4 +1,4 @@
-<!-- =====================================================================
+/* =======================================================================
 * Copyright (c) 2023, MongooseOrion.
 * All rights reserved.
 *
@@ -22,5 +22,34 @@
 * THIS CODE IS PROVIDED BY https://github.com/MongooseOrion. 
 * FILE ENCODER TYPE: GBK
 * ========================================================================
--->
-# 基于 FPGA 的超声波测距系统
+*/
+// uart 数据输入输出模块
+// 
+module uart_trans(
+    input               clk         ,   
+    input               rst_n       ,   
+
+    input               uart_rx     ,   
+    output              uart_tx     , 
+    output              send_end    ,  
+
+    input               data_in_flag,
+    input   [7:0]       data_in
+);
+
+uart_rx u_uart_rx(
+    .clk                (clk            ),
+    .rst                (rst_n          ),
+    .uart_rx            (uart_rx        )
+);
+
+uart_tx u_uart_tx(
+    .clk                (clk            ),
+    .rst                (rst_n          ),
+    .uart_tx            (uart_tx        ),
+    .data_in            (data_in        ),
+    .data_in_flag       (data_in_flag   ),
+    .send_end           (send_end       )
+);
+
+endmodule

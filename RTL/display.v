@@ -11,7 +11,7 @@ module display(
     );
 
 
-parameter AB=18'd300000;						//This time number can change freely, only if eyes can't realize the change of screen
+parameter AB = 'd300000;						//This time number can change freely, only if eyes can't realize the change of screen
 reg[17:0] cnt;									//Dynamic scanning counter
 												
 
